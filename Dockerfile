@@ -1,5 +1,6 @@
 FROM python:3.6
-RUN apt-get update
+MAINTAINER mses1572 <mses1572@naver.com>
+RUN apt-get  -y -qq update
 
 COPY . /app
 WORKDIR /app
