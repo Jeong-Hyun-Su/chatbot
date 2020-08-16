@@ -1,5 +1,11 @@
 # chatbot
 
+-------
+## [ 사용법 ]
+
+http://3.34.203.63:5000/chatbot?sentence=질문 작성
+
+-------
 
 ## [ Question ]
 
@@ -28,3 +34,12 @@
 
 - 당신은 개발자입니까?
 - 어떤 언어를 사용하고 있습니까?
+
+--------
+
+## [ Docker Image ID ]
+mses1572/chatbot_1.4
+
+--------
+
+mses1572@naver.com
