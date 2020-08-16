@@ -3,7 +3,7 @@
 -------
 ## [ 사용법 ]
 
-http://3.34.203.63:5000/chatbot?sentence=질문 작성
+http://3.34.203.63:31697/chatbot?sentence=질문_작성
 
 -------
 
@@ -42,4 +42,5 @@ mses1572/chatbot_1.4
 
 --------
 
+## [ 문의 ]
 mses1572@naver.com
