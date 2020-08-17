@@ -16,7 +16,7 @@ app.get('/chatbot', (req, res) => {
          data.question = "";
     }
 
-    let url = 'http://172.22.0.1:' + 5000 + '/chatbot?sentence=' + urlencode(data.question);
+    let url = 'http://localhost:' + 5000 + '/chatbot?sentence=' + urlencode(data.question);
     
     request({ 
                 method:'GET',
