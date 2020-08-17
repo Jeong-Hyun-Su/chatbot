@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chatbot
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      type: app
+      service: chatbot
+  template:
+    metadata:
+      labels:
+        type: app
+        service: chatbot
+    spec:
+      containers:
+      - name: chatbot
+        image: mses1572/chatbot_1.4:latest
+        ports:
+        - containerPort: 5000
+          protocol: TCP
+          
+        livenessProbe:
+          httpGet:
+            path: /chatbot?sentence=live
+            port: 5000
+        
+
+      
