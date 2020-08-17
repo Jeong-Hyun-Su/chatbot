@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+ ai:
+  build: ./chatbot_ai
+  ports:
+  - 5000:5000
+  networks:
+  - chatbot_network
+ server:
+  build: ./chatbot_server
+  ports:
+  - 4000:4000
+  depends_on: 
+  - ai
+  networks:
+  - chatbot_network
+  
+networks:
+ chatbot_network:
+  driver: bridge
